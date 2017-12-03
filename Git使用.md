@@ -11,3 +11,8 @@
 7. git remote add origin git@github.com:dongfangqiaoen/variety_shop.git（第一步创建的仓库的地址）
 8. git push -u origin master 将当前分支推送到origin主机，并默认origin主机（-u）
 9. 如果做完测试想删掉此库，可在此库中的setting中的最下面选择delete this repository
+
+
+
+
+
