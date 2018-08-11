@@ -99,4 +99,5 @@ public class Custom_LinearLayout extends LinearLayout {
         //addView(root);
 
 ```
+3. 此问题根源可以看[Inflate用法](./Inflate用法.md)，因为View.inflate()最后调用的还是LayoutInflater.inflate()。
 
