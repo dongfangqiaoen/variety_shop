@@ -26,7 +26,7 @@ public final class Recycler {
     RecycledViewPool mRecyclerPool;
     private ViewCacheExtension mViewCacheExtension;
     static final int DEFAULT_CACHE_SIZE = 2;
-    //清除mAttachedScrap中的数据，但是把mCachedViews中的holder放到mRecyclerPoll中并清除
+    //清除mAttachedScrap中的数据，但是把mCachedViews中的holder放到mRecyclerPool中并清除
     public void clear() {
         mAttachedScrap.clear();
         recycleAndClearCachedViews();
@@ -44,9 +44,9 @@ public final class Recycler {
         mCachedViews.remove(cachedViewIndex);
     }
     //设置最大的缓存数这个方法通过RecyclerView中的这个方法使用
-    //public void setItemViewCacheSize(int size) {
+    // public void setItemViewCacheSize(int size) {
     //   mRecycler.setViewCacheSize(size);
-    //} 
+    // } 
     public void setViewCacheSize(int viewCount) {
         mRequestedCacheMax = viewCount;
         updateViewCacheSize();
@@ -64,7 +64,7 @@ public final class Recycler {
 }
 ```
 
-getViewForPosition（）方法的帮助方法，检查参数中的viewholder是否可以用到对应的位置，：validateViewHolderForOffsetPosition（vievholder）
+getViewForPosition（）方法的帮助方法，检查参数中的viewholder是否可以用到对应的位置，validateViewHolderForOffsetPosition（vievholder）
 
 ```java
 //RecyclerView.Recycler
