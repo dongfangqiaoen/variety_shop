@@ -22,8 +22,7 @@
 工程的application要继承RePluginApplication
 RePluginApplication.attachBaseContext(Context)
 RePlugin.App.attachBaseContext();
-PMF.
-(app);
+PMF.init(app);
 PathClassLoaderUtils.path()//对宿主的HostClassLoader做修改。这是RePlugin中唯一需要修改宿主私有属性的位置了。该类只有这一个方法。
 1. 首先用反射获取宿主application中的mPackageInfo属性
 2. 再反射mPackageInfo中的mClassLoader属性
