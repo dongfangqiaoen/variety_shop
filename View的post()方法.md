@@ -65,7 +65,7 @@ final ViewRootHandler mHandler = new ViewRootHandler();
 ```
 下图是测量绘制和dispatchAttachedToWindow()方法的massagequeue
 
-![avatar](./messagequeue.png)
+![avatar](./res/messagequeue.png)
 
 总结:
 

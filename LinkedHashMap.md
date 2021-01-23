@@ -4,7 +4,7 @@
 -  HashMap的数据结构： 在java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构都可以用这两个基本结构来构造的，HashMap也不例外。HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。
 - HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变
 
-![avatar](./collection.png)
+![avatar](./res/collection.png)
 
 ```java
 public class HashMap<K,V>
@@ -57,9 +57,9 @@ static int indexFor(int h， int length) {
 - 在LinkedHashMapMap中，所有put进来的Entry都保存在如下面第一个图所示的哈希表中，但由于它又额外定义了一个以head为头结点的双向链表(如下面第二个图所示)，因此对于每次put进来Entry，除了将其保存到哈希表中对应的位置上之外，还会将其插入到双向链表的尾部。
 
 
-![avatar](./LinkedHashMap.png)
+![avatar](./res/LinkedHashMap.png)
 
-![avatar](./linkedhashmap1.png)
+![avatar](./res/linkedhashmap1.png)
 ```java
 /**
  * Called by superclass constructors and pseudoconstructors (clone,
@@ -125,7 +125,7 @@ public class Hashtable<K,V>
    
 #### HashMap HashTable区别
 
-![avatar](./hashtable.png)
+![avatar](./res/hashtable.png)
 
 HashMap和Hashtable都实现了Map接口,但是继承不一样。
 主要区别有：线程安全性，同步(synchronization)，以及速度。

@@ -3,7 +3,7 @@
 
 #### View
 
-![avatar](./touchevent.png)
+![avatar](./res/touchevent.png)
 OnTouchListener在dispatch中，OnLongClickListener,OnClickListener在onTouchEvent中，先执行touchlistener ,再执行longclicklistener和clicklistener,long先于click,如果做了long就不能做click了，两个只能做一个。
 ```java
  /**传递触摸屏幕的手势事件给目标view，如果他是目标view，就直接给他。
